@@ -1,38 +1,99 @@
-<!DOCTYPE html>
-<html>
-<head>  
+    <!DOCTYPE html>
+    <html>
+    <head>  
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Tatlonghari - Portfolio</title>
-</head>
-<body>
-    <p>
-        <img src="images/SFStateLogo.jpg">
+    <link rel="stylesheet" href="styles/main.css">
+    </head>
 
-    </p>
-
-    <h1>John Tatlonghari</h1>
-
-    <h2>About Me</h2>
-    <p> 
-        Hi, I'm John Tatlonghari (TAT-LONG-HARI), a junior Computer Science major at San Francisco State University. I am a decent programmer in Java and just recently started to learn C++. 
-    <br>Right now, my career goal is to get an internship to gain relevant experience. I do not have an idea of what area to specialize in yet but I have considered AI, Data, and UI/UX Design.
-    <br>I hope to create a web-based image viewer once I finish this class. 
-    </p>
     
-    <h2>Hobbies</h2>
-    <p>
-        Some of my hobbies are hiking, stargazing, video games, baking, and cooking. I am currently learning how to make better sourdough bread and learning more sauces for my pan seared salmon. 
-    </p>
+    <body>
+    <!-- Header -->
+    <header>
+        <p><img src="images/SFStateLogo.jpg" alt="SF State Logo"></p>
+    </header>
+    
+    <section id="about">
+        <h1>John Tatlonghari</h1>
+        <article class="aboutSub">
+            <h2>About Me</h2>
+                <p> 
+                    Hi, I'm John Tatlonghari (TAT-LONG-HARI), a junior Computer Science major at San Francisco State University. I mainly do programming in Java and just recently started to learn C++. 
+                    <br>Right now, my career goal is to get an internship to gain relevant experience. I do not have an idea of what area to specialize in yet but I have considered AI, Data, and UI/UX Design.
+                    <br>I hope to create a web-based image viewer once I finish this class. 
+                </p>
+        </article>
+    </section>
 
+    <section id="hometown">
     <h2>From San Carlos, CA</h2>
-    <p>
-        <img src="images/Laurel Street.png">
+        <p><img src="images/Laurel Street.png" alt="Hometown Image"></p>
+    </section>
 
-    </p>
     <!-- Navigation links -->
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <!-- More links... -->
+    <section id="nav">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#hobbies">Hobbies</a>
+    </section>
+
+
+    <!-- Education, Experience, and Hobbies -->
+    <section id="education">
+        <h2 >Education</h2>
+        <ul>
+           <li>San Francisco State (2025 - Present)
+              <ul>
+                 <li>Major: Computer Science</li>
+                 <li>Expected Graduation: 2027</li>
+              </ul>
+           </li>
+           <li>College of San Mateo (2020-2024)
+            <ul>
+               <li>Associates Degree in Computer & Information Science</li>
+               <li>In Dean's List for three semesters</li>
+            </ul>
+         </li>
+        </ul>
+     </section>
+     <section id="experience">
+        <h2>Experience</h2>
+        <table class="expTable">
+           <tr>
+              <th>Position</th>
+              <th>Company</th>
+              <th>Dates</th>
+           </tr>
+           <tr>
+              <td>Barista</td>
+              <td>Barnes & Noble</td>
+              <td>July 2023 - December 2024</td>
+           </tr>
+           <tr>
+              <td>Student Assistant</td>
+              <td>College of San Mateo (Learning Center)</td>
+              <td>August 2022 - May 2023</td>
+           </tr>
+        </table>
+     </section>
+     <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>Some of my hobbies include hiking, stargazing, video games, baking, and cooking.</p>
+     </section>
+     
+
+     <footer>
+        <section id="contact" class="contact-info">
+            <h2>Contact</h2>
+            <ul>   
+                <li><a href="mailto:">john4hari@gmail.com</a></li>
+                <li><a href="">https://github.com/JohnTatlonghari?tab=repositories</a></li>
+                <li><a href="">https://www.linkedin.com/in/john-gabriel-tatlonghari-246688255/</a></li>
+            </ul>
+            <p>Copyright &copy; John Tatlonghari 2025</p>
+        </section>
+    </footer>
 
     
 </body>
