@@ -39,7 +39,7 @@ h1, h2 {
 }
 
 /* Navigation */
-#nav {
+nav {
     display: flex;
     justify-content: center;
     background: #3d6ea0;
@@ -51,7 +51,7 @@ h1, h2 {
     z-index: 1000;
 }
 
-#nav a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 12px 20px;
@@ -62,7 +62,7 @@ h1, h2 {
 }
 
 
-#nav a:hover {
+nav a:hover {
     background: #13488d;
 }
 
