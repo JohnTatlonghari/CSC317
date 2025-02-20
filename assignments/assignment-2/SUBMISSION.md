@@ -91,8 +91,7 @@ This is how each block of code in my website is formatted. In general I tend to 
 
                </form>
             </div>
-
-One important thing to note is that this is buggy in firefox 135.0.1. It doesn't show what you're required to input and the submit button only brings you back to the email input. Use CHROME instead. 
+One important thing to note is that this is buggy in firefox 135.0.1. It doesn't show what you're required to input and the submit button only brings you back to the email input. Use CHROME instead.
 
 
 
