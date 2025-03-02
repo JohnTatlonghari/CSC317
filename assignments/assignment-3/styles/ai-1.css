@@ -1,0 +1,174 @@
+/*
+
+PROMPTS (Note that this also includes the feedback after the initial prompt)
+
+Initial Prompt: can you style my website using gray for the body and white for header elements. make sure that the text can still be seen. Use a different font for headers. Center the logo and nav.
+ 
+Feedback:
+
+the background for footer is too dark and the footer link color doesn't contrast well with the background
+can you increase the gap between links in the footer
+can you put borders on the table grid?
+is this style mobile friendly?
+can you change the color text for  h1, h2,h3 that still contrasts with the background. slightly darken header bg color too
+reduce saturation of h1,h2,h3 color
+
+
+*/
+
+
+
+/* General styles */
+body {
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #e0e0e0;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Navigation */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* Logo styles */
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Header text styles */
+h1, h2, h3 {
+    font-family: 'Andada Pro', serif;
+    color: #d1a853;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Hobby section styles */
+#hobbies {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#hobbies h2 {
+    color: #FFD700;
+    font-size: 1.8em;
+}
+
+#hobbies p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Responsive Table */
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+    footer {
+        padding: 15px;
+    }
+    footer a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+

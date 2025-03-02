@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Personal portfolio of John Tatlonghari">
+   <meta name="keywords" content="portfolio, web development, student">
+   <meta name="author" content="John Tatlonghari">
+
+   <link rel="icon" type="image/x-icon" href="images/w-icon.png">
+   <link rel="stylesheet" href="styles/styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap" rel="stylesheet">
+   
+   <title>John Tatlonghari - Portfolio</title>
+
+</head>
+
+<body>
+
+   <!-- Header -->
+   <header>
+      <div id="logo">
+      <img src="images/SFStateLogo.jpg" alt="SF State Logo">
+      </div>
+      <nav>
+         <a href="#about">About Me</a>
+         <a href="#education">Education</a>
+         <a href="#experience">Experience</a>
+         <a href="#hobbies">Hobbies</a>
+         <a href="#contact-info">Contact Info</a>
+
+      </nav>
+   </header>
+
+   <main>
+
+      <section id="about">
+         <h1>John Tatlonghari</h1>
+         <article id="bio">
+            <h3>About Me</h3>
+            <p>
+               Hi, I'm John Tatlonghari (TAT-LONG-HARI), a junior Computer Science major at San Francisco State
+               University. I mainly do programming in Java. Recently, I started learning C++.
+               <br>Right now, my career goal is to get an internship to gain relevant experience. I do not have an idea
+               of what area to specialize in yet but I have considered AI, Data, and UI/UX Design.
+               <br>I hope to create a web-based image viewer once I finish this class.
+            </p>
+         </article>
+
+         <article id="hometown">
+            <h3>From San Carlos, CA</h3>
+            <p><img src="images/Laurel_Street.png" alt="Hometown Image"></p>
+         </article>
+
+         <article id="education">
+            <h2>Education</h2>
+            <ul>
+               <li>San Francisco State (2025 - Present)
+                  <ul>
+                     <li>Major: Computer Science</li>
+                     <li>Expected Graduation: 2027</li>
+                  </ul>
+               </li>
+               <li>College of San Mateo (2020-2024)
+                  <ul>
+                     <li>Associates Degree in Computer & Information Science</li>
+                     <li>In Dean's List for three semesters</li>
+                  </ul>
+               </li>
+            </ul>
+         </article>
+
+         <article id="experience">
+            <h1>Experience</h1>
+            <table class="expTable" style="border-collapse: collapse; border: 3px solid">
+               <tr style="border: 3px solid">
+                  <th>Position</th>
+                  <th>Company</th>
+                  <th>Dates</th>
+               </tr>
+               <tr style="border: 3px solid">
+                  <td>Barista</td>
+                  <td>Barnes & Noble</td>
+                  <td>July 2023 - December 2024</td>
+               </tr>
+               <tr style="border: 3px solid">
+                  <td>Student Assistant</td>
+                  <td>College of San Mateo (Learning Center)</td>
+                  <td>August 2022 - May 2023</td>
+               </tr>
+            </table>
+         </article>
+
+         <article class="skills">
+            <h1>Skills</h1>
+            <ul>
+               <li>Java</li>
+               <li>C++</li>
+               <li>C</li>
+               <li>HTML</li>
+               <li>Customer Service</li>
+            </ul>
+         </article>
+
+         <article id="projects">
+            <h1>Projects Placeholder</h1>
+            <img src="images/placeholder-project.jpg" width="312" height="312" alt="Project Placeholder">
+            <p>At the moment, projects are WIP.</p>
+         </article>
+
+         <article id="hobbies">
+            <h2>Hobbies</h2>
+            <p>Some of my hobbies include hiking, stargazing, photography, video games, baking, and cooking.</p>
+         </article>
+
+      </section>
+
+   </main>
+
+   <footer>
+      <section id="contact-info">
+         <article class="links">
+            <h3>Other links</h3>
+            <a href="mailto:">jtatlonghari@sfsu.edu</a>
+            <a href="">https://github.com/JohnTatlonghari?tab=repositories</a>
+            <a href="">https://www.linkedin.com/in/john-gabriel-tatlonghari-246688255/</a>
+         </article>
+
+         <article class="form-main">
+            <div class="form-container">
+               <h3>For Inquiries</h3>
+               <form id="userForm" onsubmit="return validateForm()">
+                  <!-- Email Input -->
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required placeholder="Enter your email"
+                     pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                  <span class="error-message" id="emailError">Please enter a valid email (e.g
+                     example@gmail.com)<br><br></span>
+
+                  <!-- Number Input -->
+                  <label for="age">Age (10-63):</label>
+                  <input type="number" id="age" name="age" min="10" max="63" required placeholder="Enter your age">
+                  <span class="error-message" id="ageError">Age must be between 10 and 63.<br><br></span>
+
+                  <!-- Date Input -->
+                  <label for="dob">Date of Birth:</label>
+                  <input type="date" id="dob" name="dob">
+
+                  <!-- Password Input -->
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required pattern=".{6,}"
+                     placeholder="At least 6 characters">
+                  <span class="error-message" id="passwordError">Password must be at least 6 characters
+                     long.<br><br></span>
+
+                  <button type="submit">Register</button>
+
+               </form>
+            </div>
+
+            <script>
+               function validateForm() {
+                  let isValid = true;
+
+                  // Email Validation
+                  const email = document.getElementById("email");
+                  const emailError = document.getElementById("emailError");
+                  if (!email.checkValidity()) {
+                     emailError.style.display = "block";
+                     isValid = false;
+                  } else {
+                     emailError.style.display = "none";
+                  }
+
+                  // Age Validation
+                  const age = document.getElementById("age");
+                  const ageError = document.getElementById("ageError");
+                  if (age.value < 10 || age.value > 63) {
+                     ageError.style.display = "block";
+                     isValid = false;
+                  } else {
+                     ageError.style.display = "none";
+                  }
+
+                  // Password Validation
+                  const password = document.getElementById("password");
+                  const passwordError = document.getElementById("passwordError");
+                  if (!password.checkValidity()) {
+                     passwordError.style.display = "block";
+                     isValid = false;
+                  } else {
+                     passwordError.style.display = "none";
+                  }
+
+                  return isValid;
+               }
+            </script>
+         </article>
+<!--
+         <div id="iframes">
+            <iframe src="https://www.google.com/maps" height="240" width="320" title="google maps"></iframe>
+            <iframe src="https://github.com/JohnTatlonghari/CSC317" height="240" width="320" title="github"></iframe>
+            <iframe width="320" height="240"
+               src="https://www.openstreetmap.org/export/embed.html?bbox=-122.47757345438006%2C37.72052952905647%2C-122.47368425130846%2C37.72263204351108&amp;layer=mapnik"
+               style="border: 1px solid black"></iframe><br><small><a
+                  href="https://www.openstreetmap.org/#map=19/37.721581/-122.475629">View Larger Map</a></small>
+         </div>
+
+         <div id="audio">
+            <audio id="myaudio" title="Audio from Monsters Inc. Theme" controls>
+               <source src="short.mp3" type="audio/mpeg">Your browser does not support audio
+            </audio>
+            <script>
+               var audio = document.getElementById("myaudio");
+               audio.volume = 0.3;
+            </script>
+         </div>
+-->
+         <p>Copyright &copy; John Tatlonghari 2025</p>
+      </section>
+   </footer>
+
+      
+
+
+
+</body>
+
+</html>

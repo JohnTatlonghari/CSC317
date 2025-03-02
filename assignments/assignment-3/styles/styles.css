@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'CCJimLee';
+    src: url('fonts/CCJimLee.ttf');
+}
+
+
+#logo { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4858af;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+   
+#logo > img {
+    width: fit-content;
+    
+}
+
+nav {
+    
+    background-color: #404168;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+nav > a {
+    font-family: Andada Pro, serif;
+    font-size: 120%;
+    font-weight: bold;
+    color: #d0d4e2;
+    
+}
+
+
+h1{
+    font-family: Andada Pro, serif;
+    font-size: 2.5em;
+
+}
+
+h2, th {
+    font-size: 1.95em;
+    font-family: Andada Pro, serif;
+    
+}
+
+h3 {
+    font-size: 1.7em;
+    font-family: Andada Pro, serif;
+}
+
+p,li,td {
+    font-family: Josefin Sans, sans;
+    font-size: 25px;
+    color:#35355f
+}
+
+body {
+    background-color: #6a6a97;
+    
+}
+
+main {
+    margin-top: 3%;
+    border-radius: 20px;
+    background-color: #dce2f3;
+    padding: 20px;
+    color: rgb(21, 39, 95);
+}
+
+footer {
+    background-color: #dce2f3;
+    color: rgb(4, 24, 85);
+
+}
+
+label {
+    color:#1c1c5e;
+    
+}
+
+.error-message {
+    color:#22225a;
+}
+
