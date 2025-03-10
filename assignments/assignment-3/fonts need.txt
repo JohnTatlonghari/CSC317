@@ -1,0 +1,3 @@
+Fonts:
+Heading/Titles/Significant: Arvo/Playfair Display/ 
+Desc: Nunito/Lato/Object Sans/ Josefin Sans
