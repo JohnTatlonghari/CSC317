@@ -1,0 +1,158 @@
+/*
+PROMPT (Every line after line 3 is a prompt)
+*Upload index.html and website screenshot*
+Use the screenshot to create a new css file that styles all sections in index.html similarly
+center the nav and image, implement the highlighted heading background for h1,h2,h3
+can you place h1 John Tatlonghari above "About Me"
+it's appearing beside "about me," can you place it above
+can the highlight background be the same color as the background for "expertise" in the screenshot
+can you add mobile-friendly scaling?
+can you add a small bounce animation when hovering over a nav anchor?
+
+*/
+:root {
+  --bg-color: #1d120f;
+  --section-bg-color: #362520;
+  --text-color: #d3c6bf;
+  --heading-bg: #74b8d8;
+  --heading-color: #1a2225;
+  --border-color: #d9a38f;
+  --font-family: 'Andada Pro', serif;
+}
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: 1.5;
+}
+
+/* Header and nav links */
+header {
+  background-color: var(--bg-color);
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Bounce animation on hover */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+header nav a:hover {
+  color: var(--heading-bg);
+  animation: bounce 0.8s;
+}
+
+
+
+
+/* Generic section styling */
+section {
+  background-color: var(--section-bg-color);
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+/* Center images within sections */
+section img {
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Highlighted headings */
+section h1,
+section h2,
+section h3 {
+  background-color: var(--heading-bg);
+  color: var(--heading-color);
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+/* Override for bio section h1 to force block display */
+#bio h1 {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Table styling (experience section) */
+.expTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.expTable th,
+.expTable td {
+  border: 2px solid var(--border-color);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--bg-color);
+  border-top: 1px solid var(--border-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+#linksHeader h3 {
+  display: block;
+  margin-bottom: 1rem; /* Adjust spacing as desired */
+}
+
+/* Display each link on a separate line */
+#links a {
+  display: block;
+  margin: 0.5rem 0; /* Adjust spacing between links if needed */
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+footer a:hover {
+  color: var(--heading-bg);
+}
+
+footer h4 {
+  margin-top: 1rem;
+  color: var(--text-color);
+}

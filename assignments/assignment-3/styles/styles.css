@@ -1,9 +1,9 @@
 :root {
     --content-bgcolor: #dce2f3;
     --content-color: #35355f;
-    --content-font-family: Josefin Sans;
+    --content-font-family: "Josefin Sans";
     --heading-color: #1b285d;
-    --heading-font-family: Andada Pro;
+    --heading-font-family: "Andada Pro";
     --gap-std: 20px;
     --border-rad-std: 20px;
     --padding-std: 20px;
@@ -38,7 +38,7 @@ nav {
 }
 
 nav > a {
-    font-family: --var(heading-font-family);
+    font-family: var(--heading-font-family);
     font-size: 120%;
     font-weight: bold;
     color: #d0d4e2;
@@ -46,7 +46,7 @@ nav > a {
 }
 
 h1{
-    font-family: Andada Pro, serif;
+    font-family: var(--heading-font-family);
     font-size: 2.5rem;
     color: var(--heading-color);
 
@@ -54,19 +54,19 @@ h1{
 
 h2, th {
     font-size: 1.95rem;
-    font-family: Andada Pro, serif;
+    font-family: var(--heading-font-family);
     color: var(--heading-color);
     
 }
 
 h3 {
     font-size: 1.7rem;
-    font-family: Andada Pro, serif;
+    font-family: var(--heading-font-family);
     color: #1b285d;
 }
 
 p,li,td, #copyright {
-    font-family: Josefin Sans, sans;
+    font-family: var(--content-font-family);
     font-size: 1.7rem;
     color:var(--content-color);
 }
