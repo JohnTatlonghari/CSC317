@@ -1,2 +1,0 @@
-Sometimes you have to modify the parent container for the formatting (placement, etc)
-Use grid layout 
