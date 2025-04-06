@@ -1,1 +1,2 @@
-input type = image
+
+form target = framename
