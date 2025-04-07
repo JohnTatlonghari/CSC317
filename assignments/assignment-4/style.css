@@ -1,69 +1,87 @@
+:root {
+    --std-font: 2rem;
 
-#input-display, #output-display {
-    display: flex;
-    flex-direction: row-reverse;
-    border-color: rgb(110, 110, 110);
+    
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display:flex;
+    height: 100vh;
+}
+
+#display-1, #display-2 {
+    display:block;
+    background-color: #464646;
+    border-color: rgb(172, 172, 172);
     border-style:solid;
-    height: 80px;
-    width: 30%;
-    margin-left: 35%;
-    margin-right: 35%;
+    height: 3rem;
+    max-width: 600px;
+    width: 320px;
+    overflow: hidden;
+    padding: 20px;
+    color: white;
+    font-size: var(--std-font);
+
 }
 
 
 #button-container {
-    margin-left: 35%;
-    margin-right: 35%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
-    column-gap: 30px;
-    row-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.5rem;
+    height:fit-content;
+    width: fit-content;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+    margin-top: 2rem;
 }
 
 button {
     margin: 0;
     padding: 0;
     border: 0;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     color:#e4e4e4;
-    background-color: #2c2c2c;
+    font-size: var(--std-font);
 }
 
-#AC, #plusminus, #mod {
+.util-op {
     background-color: #474747;
 }
 
-#AC:hover, #plusminus:hover, #mod:hover {
+.util-op:hover {
     background-color: #7a7a7a;
 }
-#AC:active, #plusminus:active, #mod:active {
+.util-op:active {
     background-color: #7a7a7a7a;
 }
 
-#division,#multiplication,#addition,#subtraction,#equals {
+.main-op {
     background-color:#ff9036;
 }
 
-#division:hover,#multiplication:hover,#addition:hover,#subtraction:hover, #equals:hover {
+.main-op:hover {
     background-color:#ffa053;
 }
 
-#division:active,#multiplication:active,#addition:active,#subtraction:active, #equals:active {
+.main-op:active {
     background-color:#ffa05369;
 }
 
-button:hover {
-    background-color: rgba(139, 139, 139, 0.664)
+.numbers {
+    background-color: rgba(71, 71, 71, 0.267)
 }
 
-button:active {
-    background-color: rgba(100, 100, 100, 0.267)
+.numbers:hover {
+    background-color: rgba(139, 139, 139, 0.664);
+}
+
+.numbers:active {
+    background-color: rgba(100, 100, 100, 0.267);
 }
 
 body {

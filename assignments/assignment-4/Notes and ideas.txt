@@ -1,2 +1,47 @@
+Functions
 
-form target = framename
+*Higher Order Functions
+- Functions that return functions 
+
+*You can pass functions to another function
+- The function becomes an object that can be interacted with. 
+
+*Lambda function
+- Arrow function, assigning an operation to a variable.
+- Takes a different meaning depending on return behavior
+- Can refer to the scope above it if defined within a function 
+
+*Scope
+-Concept of scope is the same as C++/Java. Function variables are local to itself
+
+*Lexical Scope
+- In a function, you can access variables one step above the function scope. 
+
+function outer() {
+const message = "hello"
+
+function inner() {
+	return message
+}
+
+
+inner()
+}
+
+
+*Module pattern and private variables
+- Adding () to the end of a function definition executes it (callback)
+
+
+OBJECTS
+
+*Object Literal
+- Syntax
+
+	const <name> = { <keyname>: value, <keyname>: value, ... <functionname> {  } 
+
+}; 
+
+
+*Initialization
+- const <objName> = new <objName>() -> uses constructor syntax similar to java
