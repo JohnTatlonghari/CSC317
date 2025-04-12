@@ -1,48 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
+   <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Calculator Project">
-   <meta name="keywords" content="calculator, ios calculator">
+   <meta name="description" content="Personal portfolio of John Tatlonghari">
+   <meta name="keywords" content="portfolio, web development, student">
    <meta name="author" content="John Tatlonghari">
-   <link rel="stylesheet" href="style.css">
-   <title>JavaScript Calculator</title>
+
+   <link rel="icon" type="image/x-icon" href="images/w-icon.png">
+   <link rel="stylesheet" href="styles/hybrid.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap" rel="stylesheet">
+   
+   <title>John Tatlonghari - Portfolio</title>
+
 </head>
+
 <body>
-<main>
 
-    <input id="display-1" readonly>
-    <input id="display-2" readonly>
-	
-    <div id="button-container">
+   <!-- Header -->
+   <header>
+      <div id="logo">
+      <img src="images/SFStateLogo.jpg" alt="SF State Logo">
+      </div>
+      <nav>
+         <a href="#about">About Me</a>
+         <a href="#education">Education</a>
+         <a href="#experience">Experience</a>
+         <a href="#links">External Links</a>
 
-        <button id="AC" class="util-op" onclick="clearDisplay()">AC</button>
-        <button id="plusminus" class="util-op" onclick="negate()">+/-</button>
-        <button id="mod" class="util-op" onclick="appendToDisplay('%')">%</button>
-        <button id="division" class="main-op" onclick="appendToDisplay('/')">/</button>
+      </nav>
+   </header>
 
-        <button id="1" class="numbers" onclick="appendToDisplay('1')">1</button>
-        <button id="2" class="numbers"  onclick="appendToDisplay('2')">2 </button>
-        <button id="3" class="numbers"  onclick="appendToDisplay('3')">3</button>
-        <button id="multiplication" class="main-op" onclick="appendToDisplay('*')"> * </button>
+   <main>
+ 
+         
+         <section id="bio">
+         <h1>John Tatlonghari</h1>
+         <h3>About Me</h3>
+            <p>
+               Hi, I'm John Tatlonghari (TAT-LONG-HARI), a junior Computer Science major at San Francisco State
+               University. I mainly do programming in Java. Recently, I started learning C++.
+               <br>Right now, my career goal is to get an internship to gain relevant experience. I do not have an idea
+               of what area to specialize in yet but I have considered AI, Data, and UI/UX Design.
+               <br>I hope to create a web-based image viewer once I finish this class.
+            </p>
+         </section>
 
-        <button id="4"  class="numbers" onclick="appendToDisplay('4')">4</button>
-        <button id="5"  class="numbers" onclick="appendToDisplay('5')"> 5 </button>
-        <button id="6" class="numbers"  onclick="appendToDisplay('6')"> 6 </button>
-        <button id="subtraction" class="main-op" onclick="appendToDisplay('-')"> - </button>
+         <section id="hometown">
+            <h2>From San Carlos, CA</h2>
+            <img src="images/Laurel_Street.png" alt="Hometown Image">
+         </section>
 
-        <button id="7" class="numbers" onclick="appendToDisplay('7')"> 7 </button>
-        <button id="8" class="numbers" onclick="appendToDisplay('8')"> 8 </button>
-        <button id="9" class="numbers" onclick="appendToDisplay('9')"> 9 </button>
-        <button id="addition" class="main-op" onclick="appendToDisplay('+')"> + </button>
+         <section id="education">
+            <h2>Education</h2>
+            <ul>
+               <li>San Francisco State (2025 - Present)
+                  <ul>
+                     <li>Major: Computer Science</li>
+                     <li>Expected Graduation: 2027</li>
+                  </ul>
+               </li>
+               <li>College of San Mateo (2020-2024)
+                  <ul>
+                     <li>Associates Degree in Computer & Information Science</li>
+                     <li>In Dean's List for three semesters</li>
+                  </ul>
+               </li>
+            </ul>
+         </section>
 
-        <button id="0" class="numbers" onclick="appendToDisplay('0')"> 0 </button>
-        <button id="decimal" class="numbers" onclick="appendToDisplay('.')"> . </button>
-        <button id="equals" class="main-op" onclick="calculate()"> = </button>
+         <section id="experience">
+            <h2>Experience</h2>
+            <table class="expTable" style="border-collapse: collapse; border: 3px solid">
+               <tr style="border: 3px solid">
+                  <th>Position</th>
+                  <th>Company</th>
+                  <th>Dates</th>
+               </tr>
+               <tr style="border: 3px solid">
+                  <td>Barista</td>
+                  <td>Barnes & Noble</td>
+                  <td>July 2023 - December 2024</td>
+               </tr>
+               <tr style="border: 3px solid">
+                  <td>Student Assistant</td>
+                  <td>College of San Mateo (Learning Center)</td>
+                  <td>August 2022 - May 2023</td>
+               </tr>
+            </table>
+         </section>
 
-    </div>
-    <script src="functionality.js"></script>
-</main>
+         <section id="skills">
+            <h2>Skills</h2>
+            <div id="skills-content">
+            
+               <p>Java</p>
+               <p>C++</p>
+               <p>C</p>
+               <p>HTML</p>
+               <p>Customer Service</p>
+            </div>
+         </section>
+
+         <section id="project-grid">
+            <div id="project-card">
+            <h3>JavaScript Calculator</h3>
+            <a href="calculator.html" target="_self">Calculator Link!</a> 
+            <p>
+               A basic calculator implemented using HTML, CSS, and JavaScript. I used the iOS calculator as a reference. 
+               It has all the basic features along with modulo and negation.
+            </p>
+            </div>
+         </section>
+
+   </main>
+
+   <footer>
+      <h3>Other links</h3>
+      <div id="links">
+         
+            <a href="mailto:">jtatlonghari@sfsu.edu</a>
+            <a href="">https://github.com/JohnTatlonghari?tab=repositories</a>
+            <a href="">https://www.linkedin.com/in/john-gabriel-tatlonghari-246688255/</a>
+      </div>
+      <section id="copyright">
+         <h4>Copyright &copy; John Tatlonghari 2025</h4>
+      </section>
+   </footer>
+
 </body>
+
 </html>
