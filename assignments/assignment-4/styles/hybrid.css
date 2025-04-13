@@ -1,10 +1,8 @@
-/* AI-2 PART */
-
 :root {
-    --bg-color: #1d120f;
-    --section-bg-color: #362520;
+    --bg-color: #57423d;
+    --section-bg-color: #3d2925;
     --text-color: #d3c6bf;
-    --heading-bg: #74b8d8;
+    --heading-bg: #71b9da;
     --heading-color: #1a2225;
     --border-color: #d9a38f;
     --font-family: 'Andada Pro', serif;
@@ -29,12 +27,15 @@ body {
 header {
     background-color: var(--bg-color);
     padding: 1rem;
-    border-bottom: 1px solid var(--border-color);
 }
 
 header nav {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
+    background-color: var(--section-bg-color);
+    padding: 15px;
+    border-radius: 20px;
 }
 
 header nav a {
@@ -43,6 +44,22 @@ header nav a {
     margin: 0 1rem;
     transition: transform 0.2s ease-in-out;
 }
+
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--section-bg-color);
+    border-radius: 20px;
+}
+
+#logo>img {
+    padding: 20px;
+    width: fit-content;
+
+}
+
 
 /* Bounce animation on hover */
 @keyframes bounce {
@@ -68,6 +85,16 @@ header nav a:hover {
     color: var(--heading-bg);
     animation: bounce 0.8s;
 }
+
+main {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    padding: 3px;
+
+}
+
 
 /* Generic section styling */
 section {
@@ -153,30 +180,6 @@ footer h4 {
 
 /*  HANDWRITTEN PART  */
 
-#logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--section-bg-color);
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-#logo>img {
-    width: fit-content;
-
-}
-
-
-main {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border-radius: 20px;
-    background-color: var(--bg-color);
-    padding: 3px;
-
-}
-
 /* Projects */
 #project-grid {
     display: grid;
@@ -200,6 +203,11 @@ main {
     transition: color 0.3s ease;
     width:fit-content;
     padding: 10px;
+}
+
+#project-card img {
+    max-width:128px;
+    max-height: 128px;
 }
 
 #project-card a:hover {

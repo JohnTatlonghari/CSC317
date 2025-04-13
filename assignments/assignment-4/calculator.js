@@ -27,8 +27,9 @@ function appendToDisplay(input) {
 
 function calculate() {
     try {
-    display2.value = eval(display2.value);
     display1.value = display2.value;
+    display2.value = eval(display2.value);
+    
     }
 
     catch {

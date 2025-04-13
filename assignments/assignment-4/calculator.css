@@ -1,6 +1,12 @@
 :root {
     --std-font: 2rem;
-
+    --bg-color: #1d120f;
+    --section-bg-color: #362520;
+    --text-color: #d3c6bf;
+    --heading-bg: #74b8d8;
+    --heading-color: #1a2225;
+    --border-color: #d9a38f;
+    --font-family: 'Andada Pro', serif;
     
 }
 
@@ -10,6 +16,9 @@ body {
     margin: 0;
     display:flex;
     height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
 }
 main {
 
@@ -30,6 +39,30 @@ main {
     color: white;
     font-size: var(--std-font);
     max-height: 3vh;
+}
+
+#back {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--heading-bg);
+    color: var(--heading-color);
+    padding: 2px;
+    height: 3vh;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    width: 5vw;
+}
+
+#back a {
+    color:#530808 ;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    width:fit-content;
+    padding: 1rem;
+
 }
 
 
@@ -79,17 +112,13 @@ button {
 }
 
 .numbers {
-    background-color: rgba(71, 71, 71, 0.267)
+    background-color: rgba(43, 43, 43, 0.781)
 }
 
 .numbers:hover {
-    background-color: rgba(139, 139, 139, 0.664);
+    background-color: rgba(173, 173, 173, 0.664);
 }
 
 .numbers:active {
-    background-color: rgba(100, 100, 100, 0.267);
+    background-color: rgba(100, 100, 100, 0.712);
 }
-
-body {
-    background-color: black;
-  }
