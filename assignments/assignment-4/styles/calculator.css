@@ -1,9 +1,9 @@
 :root {
     --std-font: 2rem;
-    --bg-color: #1d120f;
-    --section-bg-color: #362520;
+    --bg-color: #57423d;
+    --section-bg-color: #3d2925;
     --text-color: #d3c6bf;
-    --heading-bg: #74b8d8;
+    --heading-bg: #71b9da;
     --heading-color: #1a2225;
     --border-color: #d9a38f;
     --font-family: 'Andada Pro', serif;
@@ -21,11 +21,12 @@ body {
     font-family: var(--font-family);
 }
 main {
-
+    background-color: rgb(22, 20, 20);
     max-height:100vh;
     max-width: 100vw;
     justify-content: center;
     align-items: center;
+    padding: 1%;
 }
 
 
