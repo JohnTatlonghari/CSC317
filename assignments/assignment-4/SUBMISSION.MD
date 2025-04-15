@@ -4,7 +4,7 @@
 **Student ID:** 924450940  
 **GitHub Username:** JohnTatlonghari  
 **Assignment Number:** 4
-**GitHub Pages URL:** https://johntatlonghari.github.io/CSC317/
+**GitHub Pages URL:** https://johntatlonghari.github.io/CSC317/assignments/assignment-4/
 
 ## DOCUMENTATION
 
@@ -12,9 +12,11 @@ This project uses HTML, CSS, and Javascript to build an "IOS-like" calculator. S
 
 I knew the calculator has buttons, so I utilize said tag. I also knew that it has two displays stacked on top of each other so initally I used divs. I understand you had to use javascript but wasn't sure how until lecture 3.
 
-As for styling, all I knew was the buttons and display need to be like the IOS calculator. Grid display, different color operators, etc. However, I somewhat struggled centering the calculator itself and making sure the button grid is centered relative to the display. I had to experiment with width and margin values to get it correct (most of the time I was just referring to the wrong element though).
+As for styling, all I knew was the buttons and display need to be like the IOS calculator. Grid display, different color operators, etc. However, I somewhat struggled centering the calculator itself and making sure the button grid is centered relative to the display. I had to experiment with width and margin values to get it correct (most of the time I was just referring to the wrong element though). 
 
-Overall I still have a long way to go. I need to be more organized and have a good plan first before HTML, CSS, or anything really. I should use viewport units more for responsiveness too. 
+Javascript was simpler because all I had to do was modify the values of the display. Again, modulo, negation, and percent behave differently to make things easy for now. Ideally you would get the most recent integer from the display and apply those operations to it but I'm not sure how to do that. I managed to avoid operators duplicating by comparing them to the previous character before appending to display. 
+
+Overall I still have a long way to go. I need to be more organized and have a good plan first before starting to build a website.  I should use viewport units more for responsiveness too. 
 
 ## OTHER COMMENTS
 
