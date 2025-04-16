@@ -21,4 +21,6 @@ Overall I still have a long way to go. I need to be more organized and have a go
 
 ## OTHER COMMENTS
 
+The code for .pressed in calculator.css was provided by chatGPT when I was debugging the flashButton. It was a great idea so I kept it. 
+
 Originally I went in blind, using what I learned in class and hello.js. Everything was fine until I made the mistake of putting the buttons in separate divs when they didn't need to. Also, I didn't know how to send information to the display after clicking a button. I had to reformat my html a couple of times until I looked at a tutorial on youtube. I learned about button's onclick attribute and how it calls a function whenever it happens.  In retrospect, I didn't need to use a tutorial when hello.js has answers too; Use document.getElementById() and addEventListener() for the buttons and document.getElementById().textContent for the displays. Still, the tutorial felt simpler to do. 

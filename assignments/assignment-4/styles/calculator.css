@@ -89,8 +89,11 @@ button {
     font-size: var(--std-font);
 }
 
+
+
 .util-op {
     background-color: #474747;
+    
 }
 
 .util-op:hover {
@@ -98,10 +101,13 @@ button {
 }
 .util-op:active {
     background-color: #7a7a7a7a;
+    transform: scale(0.97);      /* Slight shrink to simulate pressing */
+    transition: all 0.1s ease;   /* Smooth animation */
 }
 
 .main-op {
     background-color:#ff9036;
+
 }
 
 .main-op:hover {
@@ -110,6 +116,8 @@ button {
 
 .main-op:active {
     background-color:#ffa05369;
+    transform: scale(0.97);      /* Slight shrink to simulate pressing */
+    transition: all 0.1s ease;   /* Smooth animation */
 }
 
 .numbers {
@@ -122,4 +130,13 @@ button {
 
 .numbers:active {
     background-color: rgba(100, 100, 100, 0.712);
+    transform: scale(0.97);      /* Slight shrink to simulate pressing */
+    transition: all 0.1s ease;   /* Smooth animation */
+}
+
+/*AI Generated*/
+.pressed {
+    background-color: #979797;      /* Light gray background */
+    transform: scale(0.97);      /* Slight shrink to simulate pressing */
+    transition: all 0.1s ease;   /* Smooth animation */
 }
