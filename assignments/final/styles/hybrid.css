@@ -6,7 +6,11 @@
     --heading-color: #1a2225;
     --border-color: #d9a38f;
     --font-family: 'Andada Pro', serif;
+    --bg-color-hover: #3f2f2b;   /* darker for hover */
+    --bg-color-active: #6f524b;  /* lighter for active */
+
 }
+
 
 /* Reset some default browser styles */
 * {
@@ -25,28 +29,51 @@ body {
 
 /* Header and nav links */
 header {
-    background-color: var(--bg-color);
-    padding: 1rem;
+    width: 100%;
+    background-color: var(--section-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
 }
 
-header nav {
-    margin-top: 1rem;
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     background-color: var(--section-bg-color);
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
+    flex-wrap: wrap;
 }
 
-header nav a {
+
+nav a {
     color: var(--text-color);
     text-decoration: none;
     margin: 0 1rem;
-    transition: transform 0.2s ease-in-out;
+    padding: 10px 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
+nav a:hover {
+    background-color: var(--bg-color-hover);
+}
+
+nav a:active {
+    background-color: var(--bg-color-active);
+}
 
 #logo {
+    margin-top: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +89,7 @@ header nav a {
 
 
 /* Bounce animation on hover */
-@keyframes bounce {
+/* @keyframes bounce {
 
     0%,
     20%,
@@ -84,10 +111,10 @@ header nav a {
 header nav a:hover {
     color: var(--heading-bg);
     animation: bounce 0.8s;
-}
+} */
 
 main {
-    margin-top: 3%;
+    margin-top: 100px;
     margin-bottom: 3%;
     border-radius: 20px;
     background-color: var(--bg-color);
@@ -176,9 +203,6 @@ footer h4 {
     color: var(--text-color);
 }
 
-/* AI-2 PART END */
-
-/*  HANDWRITTEN PART  */
 
 /* Projects */
 #project-grid {
@@ -247,4 +271,41 @@ footer h4 {
 }
 
 
-/*  HANDWRITTEN PART END */
+
+@media (max-width: 822px) {
+
+    .nav-about,.nav-education {
+        display: none;
+    }
+
+
+    header nav {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #logo > img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 530px) {
+    #logo {
+        display: none;
+    }
+    nav a {
+        padding: 6px 12px;
+        font-size: 0.95rem;
+        margin: 3px 5px;
+    }
+}
+
+@media (max-width: 530px) {
+
+    nav a {
+        font-size: 0.85rem;
+        margin: 4px 6px;
+    }
+}

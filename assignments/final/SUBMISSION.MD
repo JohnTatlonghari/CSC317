@@ -1,11 +1,11 @@
-# CSC 317 Assignment 4 Submission
+# CSC 317 Final Assignment Submission
 
 **Name:** John Tatlonghari
 **Student ID:** 924450940  
 **GitHub Username:** JohnTatlonghari  
 **Assignment Number:** 6 (Final)
 **GitHub Repo:** https://github.com/JohnTatlonghari/CSC317
-**GitHub Pages URL:** https://johntatlonghari.github.io/CSC317/assignments/assignment-5/
+**GitHub Pages URL:** https://johntatlonghari.github.io/CSC317/assignments/final/
 
 ## REFLECTION
 
