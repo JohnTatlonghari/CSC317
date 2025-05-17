@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Calculator Project">
+   <meta name="keywords" content="calculator, ios calculator">
+   <meta name="author" content="John Tatlonghari">
+   <link rel="stylesheet" href="styles/calculator.css">
+   <title>JavaScript Calculator</title>
+</head>
+<body>
+<main>
+    <div id="back"><a href="index.html">Homepage</a></div>
+        <input id="display-1" readonly>
+        <input id="display-2" readonly>
+
+    <div id="button-container">
+
+        <button id="AC" class="util-op" onclick="clearDisplay()">AC</button>
+        <button id="plusminus" class="util-op" onclick="negate()">+/-</button>
+        <button id="mod" class="util-op" onclick="takePercent()">%</button>
+        <button id="division" class="main-op" onclick="appendToDisplay('/')" >/</button>
+
+        <button id="1" class="numbers" onclick="appendToDisplay('1')" >1</button>
+        <button id="2" class="numbers"  onclick="appendToDisplay('2')">2 </button>
+        <button id="3" class="numbers"  onclick="appendToDisplay('3')">3</button>
+        <button id="multiplication" class="main-op" onclick="appendToDisplay('*')"> * </button>
+
+        <button id="4"  class="numbers" onclick="appendToDisplay('4')" >4</button>
+        <button id="5"  class="numbers" onclick="appendToDisplay('5')"> 5 </button>
+        <button id="6" class="numbers"  onclick="appendToDisplay('6')"> 6 </button>
+        <button id="subtraction" class="main-op" onclick="appendToDisplay('-')" onkeydown="displayKey('-')"> - </button>
+
+        <button id="7" class="numbers" onclick="appendToDisplay('7')"> 7 </button>
+        <button id="8" class="numbers" onclick="appendToDisplay('8')"> 8 </button>
+        <button id="9" class="numbers" onclick="appendToDisplay('9')"> 9 </button>
+        <button id="addition" class="main-op" onclick="appendToDisplay('+')"> + </button>
+
+        <button id="0" class="numbers" onclick="appendToDisplay('0')"> 0 </button>
+        <button id="decimal" class="numbers" onclick="appendToDisplay('.')"> . </button>
+        <button id="equals" class="main-op" onclick="calculate()"> = </button>
+
+    </div>
+    <script src="scripts/calculator.js"></script>
+</main>
+</body>
+</html>
