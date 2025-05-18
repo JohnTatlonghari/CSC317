@@ -1,352 +1,387 @@
-:root {
-    --bg-color: #57423d;
-    --section-bg-color: #3d2925;
-    --text-color: #d3c6bf;
-    --heading-bg: #71b9da;
-    --heading-color: #1a2225;
-    --border-color: #d9a38f;
-    --font-family: 'Andada Pro', serif;
-    --bg-color-hover: #3f2f2b;   /* darker for hover */
-    --bg-color-active: #6f524b;  /* lighter for active */
+    :root {
+        --bg-color: #57423d;
+        --section-bg-color: #3d2925;
+        --text-color: #e7e3e1;
+        --heading-bg: #71b9da;
+        --heading-color: #1a2225;
+        --border-color: #d9a38f;
+        --font-family: 'Andada Pro', serif;
+        --bg-color-hover: #3f2f2b;
+        /* darker for hover */
+        --bg-color-active: #6f524b;
+        /* lighter for active */
 
-}
-
-
-/* Reset some default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styling */
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: var(--font-family);
-    line-height: 1.5;
-}
-
-/* Header and nav links */
-header {
-    width: 100%;
-    background-color: var(--section-bg-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0 0 20px 20px;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    background-color: var(--section-bg-color);
-    padding: 15px;
-    border-radius: 0 0 20px 20px;
-    flex-wrap: wrap;
-}
-
-
-nav a {
-    color: var(--text-color);
-    text-decoration: none;
-    margin: 0 1rem;
-    padding: 10px 20px;
-    border: 2px solid var(--border-color);
-    border-radius: 10px;
-    background-color: var(--bg-color);
-    transition: background-color 0.3s ease;
-    display: inline-block;
-}
-
-nav a:hover {
-    background-color: var(--bg-color-hover);
-}
-
-nav a:active {
-    background-color: var(--bg-color-active);
-}
-
-#logo {
-    margin-top: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--section-bg-color);
-    border-radius: 20px;
-}
-
-#logo>img {
-    padding: 20px;
-    width: fit-content;
-
-}
-
-
-/* Bounce animation on hover */
-/* @keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-5px);
-    }
-
-    60% {
-        transform: translateY(-3px);
-    }
-}
-
-header nav a:hover {
-    color: var(--heading-bg);
-    animation: bounce 0.8s;
-} */
-
-main {
-    position: relative;
-    margin-top: 100px;
-    margin-bottom: 3%;
-    border-radius: 20px;
-    background-color: var(--bg-color);
-    padding: 3px;
-
-}
-
-
-/* Generic section styling */
-section {
-    background-color: var(--section-bg-color);
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    scroll-margin-top: 90px;
-}
-
-
-/* Highlighted headings */
-section h1,
-section h2,
-section h3 {
-    background-color: var(--heading-bg);
-    color: var(--heading-color);
-    display: inline-block;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    margin-bottom: 0.5rem;
-}
-
-/* Override for bio section h1 to force block display */
-#bio h1 {
-    display: block;
-    margin-bottom: 1rem;
-    max-width: fit-content;
-}
-
-/* Table styling (experience section) */
-.expTable {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-.expTable th,
-.expTable td {
-    border: 2px solid var(--border-color);
-    padding: 0.5rem;
-    text-align: left;
-    font-size: 1.1rem;
-}
-
-.expTable th {
-    font-weight: bolder;
-    font-size: 1.4rem;
-}
-
-/* Footer styling */
-footer {
-    background-color: var(--bg-color);
-    border-top: 1px solid var(--border-color);
-    padding: 1rem;
-    text-align: center;
-}
-
-#linksHeader h3 {
-    display: block;
-    margin-bottom: 1rem;
-    /* Adjust spacing as desired */
-}
-
-/* Display each link on a separate line */
-#links a {
-    display: block;
-    margin: 0.5rem 0;
-    /* Adjust spacing between links if needed */
-}
-
-footer a {
-    color: var(--text-color);
-    text-decoration: none;
-    margin-right: 1rem;
-}
-
-footer a:hover {
-    color: var(--heading-bg);
-}
-
-footer h4 {
-    margin-top: 1rem;
-    color: var(--text-color);
-}
-
-.project-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    max-width: 500px;
-    margin: 3rem auto 3rem auto;
-    border-color:var(--bg-color);
-    
-}
-
-.project-header h1 {
-    width: 500px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-/* Projects */
-.projects-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
-}
-
-.projects-container h1 {
-    display: block;
-}
-
-#project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(736px, 1fr));
-    gap: 2rem;
-    margin: 0;
-    max-width: 1600px;
-}
-
-#project-card {
-    background-color: var(--bg-color);
-    padding: 1.5rem;
-    border-radius: 4px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-#project-card a {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--heading-bg);
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    width:fit-content;
-    padding: 10px;
-    font-size: 1.3rem;
-}
-#project-card img {
-    max-width:128px;
-    max-height: 128px;
-}
-
-
-#project-card a:hover {
-    text-decoration: underline;
-    color: #ffffff; /* Optional: hover color */
-}
-
-#project-card h3 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-}
-
-
-
-#project-card p {
-    margin-bottom: 0;
-    font-size: 1.3rem;
-}
-
-/*Skills*/
-#skills-content {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-#skills-content>p {
-    display: flex;
-    background-color: var(--bg-color);
-    border-radius: 20px;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-    padding: 1rem;
-    font-size: 1.2rem;
-}
-
-
-
-@media (max-width: 822px) {
-
-    .nav-about,.nav-education {
-        display: none;
     }
 
 
-    header nav {
+    /* Reset some default browser styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: var(--font-family);
+        line-height: 1.5;
+    }
+
+    /* Header and nav links */
+    header {
+        width: 100%;
+        background-color: var(--section-bg-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 20px 20px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
         justify-content: center;
-        flex-direction: row;
+        background-color: var(--section-bg-color);
+        padding: 15px;
+        border-radius: 0 0 20px 20px;
         flex-wrap: wrap;
     }
 
-    #logo > img {
+
+    nav a {
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 0 1rem;
+        padding: 10px 20px;
+        border: 2px solid var(--border-color);
+        border-radius: 10px;
+        background-color: var(--bg-color);
+        transition: background-color 0.3s ease;
+        display: inline-block;
+    }
+
+    nav a:hover {
+        background-color: var(--bg-color-hover);
+    }
+
+    nav a:active {
+        background-color: var(--bg-color-active);
+    }
+
+    #logo {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--section-bg-color);
+        border-radius: 20px;
+    }
+
+    #logo>img {
+        padding: 20px;
+        width: fit-content;
+
+    }
+
+    #hometown img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin-top: 1rem;
     }
-}
 
-@media (max-width: 530px) {
-    #logo {
-        display: none;
-    }
-    nav a {
-        padding: 6px 12px;
-        font-size: 0.95rem;
-        margin: 3px 5px;
-    }
-}
 
-@media (max-width: 530px) {
 
-    nav a {
-        font-size: 0.85rem;
-        margin: 4px 6px;
+    /* Bounce animation on hover */
+    /* @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-5px);
+        }
+
+        60% {
+            transform: translateY(-3px);
+        }
     }
-}
+
+    header nav a:hover {
+        color: var(--heading-bg);
+        animation: bounce 0.8s;
+    } */
+
+    main {
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: 3%;
+        border-radius: 20px;
+        background-color: var(--bg-color);
+        padding: 3px;
+
+    }
+
+
+    /* Generic section styling */
+    section {
+        background-color: var(--section-bg-color);
+        padding: 2rem;
+        margin: 1rem auto;
+        max-width: 1200px;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        scroll-margin-top: 90px;
+    }
+
+
+    /* Highlighted headings */
+    section h1,
+    section h2,
+    section h3 {
+        background-color: var(--heading-bg);
+        color: var(--heading-color);
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Override for bio section h1 to force block display */
+    #bio h1 {
+        display: block;
+        margin-bottom: 1rem;
+        max-width: fit-content;
+    }
+
+    #bio p {
+        font-size: 1.2rem;
+    }
+
+    /* Table styling (experience section) */
+    .expTable {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+
+    .expTable th,
+    .expTable td {
+        border: 2px solid var(--border-color);
+        padding: 0.5rem;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    .expTable th {
+        font-weight: bolder;
+        font-size: 1.4rem;
+    }
+
+    /* Footer styling */
+    footer {
+        background-color: var(--bg-color);
+        border-top: 1px solid var(--border-color);
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #linksHeader h3 {
+        display: block;
+        margin-bottom: 1rem;
+        /* Adjust spacing as desired */
+    }
+
+    /* Display each link on a separate line */
+    #links a {
+        display: block;
+        margin: 0.5rem 0;
+        /* Adjust spacing between links if needed */
+    }
+
+    footer a {
+        color: var(--text-color);
+        text-decoration: none;
+        margin-right: 1rem;
+    }
+
+    footer a:hover {
+        color: var(--heading-bg);
+    }
+
+    footer h4 {
+        margin-top: 1rem;
+        color: var(--text-color);
+    }
+
+    .project-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        max-width: 500px;
+        margin: 3rem auto 3rem auto;
+        border-color: var(--bg-color);
+
+    }
+
+    .project-header h1 {
+        width: 500px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Projects */
+    .projects-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+
+    #project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(736px, 1fr));
+        gap: 2rem;
+        margin: 0;
+        max-width: 1600px;
+    }
+
+    #project-card {
+        background-color: var(--bg-color);
+        padding: 1.5rem;
+        border-radius: 4px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    #project-card a {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--heading-bg);
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        width: fit-content;
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+
+    #project-card img {
+        max-width: 128px;
+        max-height: 128px;
+    }
+
+
+    #project-card a:hover {
+        text-decoration: underline;
+        color: #ffffff;
+        /* Optional: hover color */
+    }
+
+    #project-card h3 {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+    }
+
+
+
+    #project-card p {
+        margin-bottom: 0;
+        font-size: 1.3rem;
+    }
+
+    /*Skills*/
+    #skills-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 2rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    #skills-content li {
+        background-color: var(--bg-color);
+        border-radius: 20px;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    
+
+    @media (max-width: 1400px) {
+        #project-grid {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            max-width: 900px;
+        }
+    }
+
+    @media (max-width: 822px) {
+        #skills-content {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        section {
+            max-width: 380px;
+        }
+
+        #project-grid {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            max-width: 350px;
+        }
+
+        .nav-about,
+        .nav-education {
+            display: none;
+        }
+
+
+        header nav {
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #logo>img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 530px) {
+        #skills-content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #logo {
+            display: none;
+        }
+
+        nav a {
+            padding: 6px 12px;
+            font-size: 0.95rem;
+            margin: 3px 5px;
+        }
+    }
+
+    @media (max-width: 530px) {
+
+        nav a {
+            font-size: 0.85rem;
+            margin: 4px 6px;
+        }
+    }
