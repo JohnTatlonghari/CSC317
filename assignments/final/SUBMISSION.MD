@@ -17,4 +17,5 @@ Before diving into coding, we first met to discuss how we would design our Pinte
 
 I believe that planning ahead helped us tremendously. It reduced the time spent on deciding what to do and allowed us to focus more on coding. Ideally, the plan should clearly outline which features to implement. Of course, no plan is perfect—we ended up adding and removing items as we progressed. As one of my professors once said, software development (among other things) is an iterative process.
 
+Lastly, I learned a lot about backend development. At first the process was confusing because I wasn't sure how it connects to the frontend. By the end though I was coding some small controller functions. 
 
