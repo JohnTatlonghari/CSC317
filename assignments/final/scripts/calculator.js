@@ -77,12 +77,18 @@ function takePercent() {
         let expr = display2.value;
 
         // Match any expression ending with a number after an operator
+        // Matches into three groups. forward slash indicates regEx 
+        // Parenthesis indicates group (1)(2)(3)
+        // Group 1 matches left side up until the last operator
+        // Group 2 matches an operator
+        // Group 3 matches any numerical digit
+        // $ - match until end of string
         let match = expr.match(/(.+?)([+\-*/])([\d.]+)$/);
 
         if (match) {
             const baseExpr = match[1];
             const operator = match[2];
-            const number = match[3];
+            const number = match[3]; 
             const percentValue = parseFloat(number) / 100;
 
             const newExpr = baseExpr + operator + percentValue;
