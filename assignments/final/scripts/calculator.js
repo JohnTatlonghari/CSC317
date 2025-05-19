@@ -56,8 +56,14 @@ function clearDisplay() {
 
 //Negate result
 function negate() {
-    display1.value = '-' + '('+ display2.value + ')';
-    display2.value = (-secureEval(display2.value));
+    try {
+        const currentValue = secureEval(display2.value);
+        const negatedValue = -currentValue;
+        display1.value = `negate(${display2.value})`;
+        display2.value = negatedValue;
+    } catch {
+        display2.value = "error";
+    }
 }
 
 //Check if input is an operator. 
@@ -65,11 +71,36 @@ function checkInput(input) {
     return ((input === '/') || (input === '*') ||  (input === '+') || (input === '-') || (input === '.') || (input === '%'));
 }
 
-//The function that % calls. It's not really how it works though. 
+/* Solution to takePercent properly*/
 function takePercent() {
-    display1.value = '%(' + display2.value + ')';
-    display2.value = (secureEval(display2.value)) / 100;
+    try {
+        let expr = display2.value;
+
+        // Match any expression ending with a number after an operator
+        let match = expr.match(/(.+?)([+\-*/])([\d.]+)$/);
+
+        if (match) {
+            const baseExpr = match[1];
+            const operator = match[2];
+            const number = match[3];
+            const percentValue = parseFloat(number) / 100;
+
+            const newExpr = baseExpr + operator + percentValue;
+            display1.value = newExpr;
+            display2.value = secureEval(newExpr);
+        } else {
+            // If it's just a number (e.g., "50"), convert directly
+            display1.value = expr + '%';
+            display2.value = secureEval(expr) / 100;
+        }
+    } catch {
+        display2.value = "error";
+    }
 }
+
+
+
+
 
 /*
 
